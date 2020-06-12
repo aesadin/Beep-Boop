@@ -62,7 +62,9 @@ This website takes a number input by the user and creates a range from 0 up to a
 5. _Open index.html in Chrome or preferred browser: 'open index.html'_
 
 
+## Known Bugs
 
+I am unable to run my code and get any output whatsoever. I know the html is functioning properly, so it is an issue with the Javascript.
 
 
 ## Support and contact details
@@ -75,6 +77,8 @@ at allisonsadin@gmail.com_
 * _HTML_
 * _Bootstrap_
 * _css_
+* _jQuery_
+* _Javascript_
 
 ### License
 
