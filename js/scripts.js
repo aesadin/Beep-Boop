@@ -53,12 +53,14 @@ function beepReplace(numberArray) {
   }
 }
 
-function boopReplace(numberArray) { 
+function beepReplace(numberArray) {
+  const arrayToString = numberArray.toString("")
   for (const element of arrayToString) {
     for(i = 0; i < element.length; i++) {
       if (element[i] === 2) {
-        let element = "Beep!"
+        let element = "Boop!"
       }
     }
   }
 }
+
