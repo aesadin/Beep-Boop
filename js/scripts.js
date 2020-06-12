@@ -3,19 +3,33 @@ $(document).ready(function() {
     event.preventDefault();
 
     const userNumber = paresInt($("#input").val());
+    
 
 
     $(".result").show();
-    /*function getInputNum() {
-      let userNumber = paresInt($("#input").val());
-      return userNumber;
-    }*/
+    
+  });
+});  
 
 //Business Logic
+const numberArray = [];
 
-for (i = 0; i < userNumber; i++) {
-  const numberArray = [];
+function range(start, end) {
+  for (let i = 0; i <= userNumber; i++) {
+    numberArray.push(i);
+
+  };
+  let numberArray;
+};
+
+const newArray = [];
+for (const element of numberArray) {
+  if (element === 3) {
+    element.replace("Won't you be my neighbor?");
+  } else if (element === 2) {
+    element.replace("Boop!");
+  } else if (element === 1) {
+    element.replace("Beep!");
+  }
 
 }
-
-
