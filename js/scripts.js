@@ -64,3 +64,14 @@ function beepReplace(numberArray) {
   }
 }
 
+function beepReplace(numberArray) {
+  const arrayToString = numberArray.toString("")
+  for (const element of arrayToString) {
+    for(i = 0; i < element.length; i++) {
+      if (element[i] === 3) {
+        let element = "Won't you be my neighbor?"
+      }
+    }
+  }
+}
+
