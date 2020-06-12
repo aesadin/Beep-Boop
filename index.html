@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -8,20 +8,19 @@
   <title>Beep Boop</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Won't You Be My Neighbor</h1>
-
-    <form id="leap-year">
+  <div class="container">    <h1>Won't You Be My Neighbor</h1>
+    <form id="formOne">
       <div class="form-group">
-        <label for="input">Give me a number, see what happens!</label>
-        <input id="input" type="text">
+        <label for="numInput">Give me a number, see what happens!</label>
+        <input id="numInput" class="form-control" type="text">
       </div>
 
       <button type="submit" class="btn">Find out!</button>
     </form>
-
-    <div class="result">
-      <p id="output">Here is your surprise!</p>
-    </div>
-
+  </div>
+  <div class="result">
+    <h1>Here is your surprise!</h1>
+    <p><span id="output"></span></p>
+  </div>
 </body>
+</html>

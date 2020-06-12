@@ -1,19 +1,18 @@
-# My First Website
+# Won't You Be My Neighbor
 
-#### _A Little Bit About Me_ 
-May 29, 2020
+#### _Date_ 
+June 12, 2020
 
 #### By _Allison Sadin_
 
 ## Description
 
-This website is for the authors personal portfolio. It has an about me section, a list of hobbies and favorite things, as well as a list of projects the author has done.
+This website takes a number input by the user and creates a range from 0 up to and including that the inputted number. Then it replaces all numbers in that range containing the digit 3, with the sentence "Won't you be my neighbor?". Then it replaces all numbers in that range containing the digit 2, with the word "Boop!". Then it replaces all numbers in that range containing the digit 1, with the word "Beep!". Then it returns the string string to the user.
 
 ## Specs
 1. Turn user's inputed number into an integer.
   * Input: "5"
   * Output: 5
-
 
 2. The program returns a range of numbers from 0 to the users inputted number.
   * Input: 4
@@ -31,19 +30,19 @@ This website is for the authors personal portfolio. It has an about me section, 
   * Input: 3
   * Output: "Won't you be my neighbor?"
 
-3. When a number in the sequence has any digits in it with a '1', replace all digits with the string "Beep!".
-  * Input: 11
+6. When a number in the sequence has any digits in it with a '1', replace number with the string "Beep!".
+  * Input: 91
   * Output: "Beep!" 
 
-4. When a number in the sequence has any digits in it with a '2', replace all digits with the string "Boop!". 
+7. When a number in the sequence has any digits in it with a '2', replace number with the string "Boop!". 
   * Input: 20
   * Output: "Boop!"
 
-5. When a number in the sequence has any digits in it with a '3', replace all digits with the string "Won't you be my neighbor?". 
+8. When a number in the sequence has any digits in it with a '3', replace number with the string "Won't you be my neighbor?". 
   * Input: 3
   * Output: "Won't you be my neighbor?"
 
-6. When a number contains a '1', '2' and '3', the last exception is to be followed over the previous two.
+9. When a number contains a '1', '2' and '3', the last exception is to be followed over the previous two.
   * input: 132
   * Output: "Won't you be my neighbor?"
 
