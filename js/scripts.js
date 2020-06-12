@@ -7,14 +7,26 @@ $(document).ready(function() {
     const userNumber = paresInt($("#numInput").val());
     const numberArray = [];
 
+    const oneBeep = function turnToBeep(number) {
+      return "Beep!";
+    };
+
+    const twoBeep = function turnToBoop(number) {
+      return "Boop!";
+    };
+
+    const threeRogers = function turnToBoop(number) {
+      return "Won't you be my neighbor";
+    };
+
     function range(start, end) {
-      for (let i = 0; i <= userNumber; i++) {
+      for (let i = start; i <= userNumber; i++) {
         numberArray.push(i);
       };
     
     };
 
-    $("#output").text(userNumber);
+    $("#output").text(oneBeep);
     $("#formOne").hide();
     $(".result").show();
     
@@ -29,6 +41,7 @@ for(i = 0; i < numberArray.length; i++) {
   };
   
 };
+
 
 for(i = 0; i < numberArray.length; i++)  {
   if (numberArray[i] === 2) {
