@@ -14,9 +14,22 @@ This website is for the authors personal portfolio. It has an about me section, 
   * Input: "5"
   * Output: 5
 
+
 2. The program returns a range of numbers from 0 to the users inputted number.
   * Input: 4
   * Output: 1, 2, 3, 4
+
+3. Replace the number 1 with the string "Beep!"
+  * Input: 1
+  * Output: "Beep!"
+
+4. Replace the number 2 with the string "Beep!"
+  * Input: 2
+  * Output: "Boop!"
+
+5. Replace the number 3 with the string "Won't you be my neighbor?"
+  * Input: 3
+  * Output: "Won't you be my neighbor?"
 
 3. When a number in the sequence has any digits in it with a '1', replace all digits with the string "Beep!".
   * Input: 11
