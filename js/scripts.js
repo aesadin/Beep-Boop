@@ -1,90 +1,55 @@
+// Business Logic
+
+function createRange(start, end) {
+  const mkArray = [];
+  for (let i = start; i <= end; i++) {
+      mkArray.push(i);
+      console.log(mkArray)
+  }
+  return mkArray;
+}
+
+function toBeep(array) {
+  const elements = []
+  for (let i = "1"; i < "1000"; i++) {
+    if (array.includes("3")) {
+      elements.push("Won't you be my neighbor?");
+    } else if (array.includes("2")) {
+        elements.push("Boop!");
+    } else if (array.includes("1")) {
+        elements.push("Beep!")
+    } else {
+        elements.push(i)
+    }
+  }
+  return elements;
+}
+
+
+
+
+
+//UI Logic
 $(document).ready(function() {
-  console.log("Script executing!");
   $("#formOne").submit(function(event) {
-    console.log("Submit form successfully reached.");
     event.preventDefault();
-
-    const userNumber = paresInt($("#numInput").val());
-    const numberArray = [];
-
-    const oneBeep = function turnToBeep(number) {
-      return "Beep!";
-    };
-
-    const twoBeep = function turnToBoop(number) {
-      return "Boop!";
-    };
-
-    const threeRogers = function turnToBoop(number) {
-      return "Won't you be my neighbor";
-    };
-
-    function range(start, end) {
-      for (let i = start; i <= userNumber; i++) {
-        numberArray.push(i);
-      };
+    const userInput = $("#numInput").val();
+    const toNumber = parseInt(userInput)
+    const numberArray = createRange(1, toNumber)
     
-    };
+    const stringArray = numberArray.toString().split(",")
+    stringArray.forEach(function(string) {
+      string.replace("3", "Won't you be my neighbor?")
+      return stringArray
+    })
+    const beepString = toBeep(stringArray)
+    
 
-    $("#output").text(oneBeep);
-    $("#formOne").hide();
+    
+
+    $("p").html(beepString);
     $(".result").show();
-    
-  });
-});  
-
-//Business Logic
-
-for(i = 0; i < numberArray.length; i++) {
-  if (numberArray[i] === 1) {
-    numberArray[i] = "Beep!";
-  };
   
-};
-
-
-for(i = 0; i < numberArray.length; i++)  {
-  if (numberArray[i] === 2) {
-    numberArray[i] = "Boop!";
-  };
-};
-
-for(i = 0; i < numberArray.length; i++)  {
-  if (numberArray[i] === 3) {
-    numberArray[i] = "Won't you be my neighbor!";
-  };
-};
-
-function beepReplace(numberArray) {
-  const arrayToString = numberArray.toString("")
-  for (const element of arrayToString) {
-    for(i = 0; i < element.length; i++) {
-      if (element[i] === 1) {
-        let element = "Beep!"
-      }
-    }
-  }
-}
-
-function beepReplace(numberArray) {
-  const arrayToString = numberArray.toString("")
-  for (const element of arrayToString) {
-    for(i = 0; i < element.length; i++) {
-      if (element[i] === 2) {
-        let element = "Boop!"
-      }
-    }
-  }
-}
-
-function beepReplace(numberArray) {
-  const arrayToString = numberArray.toString("")
-  for (const element of arrayToString) {
-    for(i = 0; i < element.length; i++) {
-      if (element[i] === 3) {
-        let element = "Won't you be my neighbor?"
-      }
-    }
-  }
-}
+    });
+  });
 
