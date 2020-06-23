@@ -1,31 +1,21 @@
-// Business Logic
 
-function createRange(start, end) {
-  const mkArray = [];
-  for (let i = start; i <= end; i++) {
-      mkArray.push(i);
-      console.log(mkArray)
-  }
-  return mkArray;
-}
-
-function toBeep(array) {
-  const elements = []
-  for (let i = "1"; i < "1000"; i++) {
-    if (array.includes("3")) {
-      elements.push("Won't you be my neighbor?");
-    } else if (array.includes("2")) {
-        elements.push("Boop!");
-    } else if (array.includes("1")) {
-        elements.push("Beep!")
+//Business Logic
+function beepBoop(userNumber) {
+  let numberArray = [];
+  for(i = 1; i < userNumber; i++) {
+    if ([i].toString().includes(3)) {
+      numberArray.push("Won't you be my neighbor?");
+    } else if ([i].toString().includes(2)) {
+      numberArray.push("Boop!");
+    } else if ([i].toString().includes(1)) {
+      numberArray.push("Beep!");
     } else {
-        elements.push(i)
+      numberArray.push(i);
     }
-  }
-  return elements;
-}
-
-
+  } 
+  console.log(numberArray)
+  return numberArray;
+};
 
 
 
@@ -33,22 +23,13 @@ function toBeep(array) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const userInput = $("#numInput").val();
-    const toNumber = parseInt(userInput)
-    const numberArray = createRange(1, toNumber)
-    
-    const stringArray = numberArray.toString().split(",")
-    stringArray.forEach(function(string) {
-      string.replace("3", "Won't you be my neighbor?")
-      return stringArray
-    })
-    const beepString = toBeep(stringArray)
-    
 
-    
+    const userNumber = parseInt($("#numInput").val())
+    const transformedArray = beepBoop(userNumber)
 
-    $("p").html(beepString);
+    $("p").html(transformedArray);
     $(".result").show();
-  
-    });
+
   });
+    
+});
