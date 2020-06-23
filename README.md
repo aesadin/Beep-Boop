@@ -60,7 +60,7 @@ This website takes a number input by the user and creates a range from 0 up to a
 
 ## Known Bugs
 
-I am unable to get my code to iterate through the array and correctly replace the numbers with their determined words. I know the issue has to do with the way I am looping because if I input a number that is 3 or larger, it returns 1000 iterations of "Won't you be my neighbor?".
+There are no known bugs.
 
 
 ## Support and contact details
