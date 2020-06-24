@@ -2,7 +2,7 @@
 //Business Logic
 function beepBoop(userNumber) {
   let numberArray = [];
-  for(i = 1; i < userNumber; i++) {
+  for(i = 0; i <= userNumber; i++) {
     if ([i].toString().includes(3)) {
       numberArray.push("Won't you be my neighbor?");
     } else if ([i].toString().includes(2)) {
